@@ -72,6 +72,14 @@ namespace Tests
             Assert.That(a.ToLower().StartsWith("t") && b.ToLower().StartsWith("t"));
         }
 
+        //[Test(Description = "Check if strings are equal ignoring case"), Order(10)] <======= this assert does not exist
+        //public void CheckIfStringsAreEqualIgnoringCase()
+        //{
+        //    string a = "This is a fun test";
+        //    string b = "this is a FUN TEST";
+        //    Assert.That(a.);
+        //}
+
         //ALWAYS PASS
         [Test(Description = "This one is meant to pass"), Order(11)]
         public void PassItAll()
